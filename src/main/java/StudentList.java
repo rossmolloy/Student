@@ -6,4 +6,8 @@ public class StudentList {
     public StudentList(ArrayList<Student> students) {
         this.students = students;
     }
+
+    public void addStudent(Student student) {
+        students.add(student);
+    }
 }
