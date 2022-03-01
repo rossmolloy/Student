@@ -10,4 +10,11 @@ public class StudentList {
     public void addStudent(Student student) {
         students.add(student);
     }
+
+    public Student findStudent(String name) {
+        return students.stream()
+                .filter(student -> name.equals(student.getName()))
+                .findAny()
+                .orElse(null);
+    }
 }
